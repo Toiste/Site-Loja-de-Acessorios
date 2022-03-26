@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.contato-home {
+    background-image: url("../IMG/fundo-contato-1.jpg");
+    background-repeat: no-repeat; /* Tirar isso se não for usar imagem de fundo*/
+    background-size: cover;
+    background-position: center center;
+    min-height: 50vh;
+}
+
+.menu-background {
+    background: none;
+}
+
+.contato-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--secundary-color);
+}
+
+.contato-home h2 {
+    font-weight: 400;
+    font-size: 7rem;
+}
+
+.contato-home div {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+
+    width: 15rem;
+}
+
+.contato-home a {
+    font-size: 1.5rem;
+    color: var(--secundary-color);
+}
+
+.contato-home p {
+    color: var(--secundary-color);
+}
+
+.contato-contact {
+    display: flex;
+
+    min-height: 50vh;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10rem;
+    margin-left: 10rem;
+    width: 50vw;
+}
+
+.contact-title h2 {
+    font-size: 4.5rem;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+}
+
+.contact-title p {
+    color: var(--terciary-color);
+
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+.contact-title a i {
+    color: var(--primary-color);
+
+    font-size: 2rem;
+
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10rem;
+    width: 50vw;
+}
+
+.contato-form label {
+    font-size: 1.5rem;
+
+}
+
+
+#name, #email, #message {
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+
+    border:1px solid var(--terciary-color);
+
+    padding-left: 1rem;
+    height: 4.6rem;
+    width: 80%;
+}
+
+#message {
+    padding-top: 1rem;
+}
+
+form input[type="submit"] {
+    color: var(--secundary-color);
+
+    background: linear-gradient(to left,#62b102,#5DAA00,#62b102);
+
+    font-weight: 900;
+    font-size: 1.4rem;
+    border: none;
+
+    margin-top: 1rem;
+    height: 5rem;
+    width: 20rem;
+
+    transition: 0.3s ease-out;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(to left,#2dc71f,#2DCC1E,#2dc71f);
+
+    margin-top: 0.5rem;
+
+    box-shadow: 0 1.8rem 4rem 1rem rgba(0, 0, 0, 0.199);
+
+    cursor: pointer;
+
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 621px) {
+    .contact-container {
+        margin-top: 5rem;
+        margin-left: 2.8rem;
+        width: 100%;
+    }
+
+    .contact-title h2 {
+        font-size: 3.5rem;
+    }
+    
+    .contact-title a i {
+        color: var(--primary-color);
+    
+        font-size: 2rem;
+    
+        margin-top: 4rem;
+        margin-left: 1rem;
+    }
+
+
+    .contato-contact {
+        display: flex;
+        flex-direction: column;
+    
+        min-height: 50vh;
+    }
+
+    .contato-form {
+        display: flex;
+        flex-direction: column;
+    
+        margin: 5rem 0 8rem 2.8rem;
+
+        width: 100%;
+    }
+
+    #name, #email, #message {
+        width: 90%;
+    }
+}

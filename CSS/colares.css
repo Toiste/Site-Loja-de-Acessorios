@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.colares-home {
+    background-image: url("../IMG/soft.png");
+    background-repeat: no-repeat; /* Tirar isso se não for usar imagem de fundo*/
+    background-size: cover;
+    background-position: center center;
+    min-height: 50vh;
+}
+
+.colares-filter {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 4rem;
+    margin-bottom: -6rem;
+}
+
+.colares-filter a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.8rem;
+
+    background: white;
+    color: black;
+    border: 1px solid var(--terciary-color);
+
+    height: 3.5rem;
+    width: 11rem;
+
+    text-align: center;
+}
+
+.colares-filter a:hover {
+    background: var(--terciary-color-light);
+
+    border: 1px solid var(--terciary-color);
+}
+
+.colares-filter p {
+    color: var(--terciary-color);
+
+    font-size: 1.5rem;
+}
+
+.colares-product {
+    min-height: 100vh;
+}
+
+.grid-product {
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 750px) {
+    .colares-filter select {
+        width: 60%;
+    }
+
+    .colares-filter p {
+        display: none;
+    }
+
+    .colares-filter a {
+        font-size: 1.5rem;
+
+        height: 3rem;
+        width: 9rem;
+    }
+
+}

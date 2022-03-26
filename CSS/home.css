@@ -1,0 +1,146 @@
+.home {
+    background-image: url("../IMG/banner-site-marco-22.jpg");
+    background-repeat: no-repeat; /* Tirar isso se não for usar imagem de fundo*/
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-home {
+    padding-top: 2rem;
+    color: var(--secundary-color);
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home h1, h4, p {
+    padding-bottom: 4rem;
+}
+
+.main-home h1 {
+    font-weight: 900;
+    font-size: 7rem;
+
+    width: 40%;
+
+    line-height: 7rem;
+}
+
+.main-home h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+
+.main-home p {
+    width: 40%;
+    font-size: 2.7rem;
+}
+
+.button-home {
+
+    height: 6rem;
+    width: 25rem;
+
+    border: 0.2rem solid var(--secundary-color);
+
+    color: var(--secundary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-home:hover {
+    cursor: pointer;
+
+    background: var(--secundary-color);
+    border: 0.2rem solid var(--primary-color);
+
+    color: var(--primary-color);
+
+    transition: 0.1s ease;
+}
+
+@media (max-width: 1024px) {
+    .main-home {
+        padding-top: 4rem;
+    }
+
+    .main-home h1 {
+        font-weight: 900;
+        font-size: 6rem;
+    
+        width: 80%;
+    
+        line-height: 7rem;
+    }
+
+    .main-home p {
+        width: 80%;
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-home {
+        padding-top: 0rem;
+    }
+
+    .main-home h1 {
+        font-weight: 900;
+        font-size: 4rem;
+    
+        width: 80%;
+    
+        line-height: 7rem;
+    }
+
+    .main-home p {
+        width: 80%;
+        font-size: 1.9rem;
+    }
+
+    .main-home h1, h4, p {
+        padding-bottom: 3rem;
+    }
+
+    .main-home h4 {
+        font-size: 1.7rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .button-home {
+        margin-top:3rem ;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-home h1 {
+        font-weight: 900;
+        font-size: 9vw;
+    
+        width: 80%;
+    
+        line-height: 6rem;
+    }
+
+
+    .main-home h4 {
+        font-size: 4vw;
+    }
+
+    .main-home p {
+        width: 80%;
+        font-size: 4.4vw;
+    }
+
+    .main-home h1, h4, p {
+        padding-bottom: 1rem;
+    }
+}

@@ -1,0 +1,66 @@
+.promotion{
+    position: relative;
+}
+
+.promotion-image {
+    color: white;
+
+    position: absolute;
+
+    bottom: 15rem;
+    left: 50%;
+
+    transform: translate(-50%, 0%);
+
+    font-size: 4rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
+
+    text-align: center;
+}
+
+.barra-colares {
+    
+    display: flex;
+}
+
+.barra-colares img {
+   height: 40rem;
+   width: 25%;
+}
+
+.promotion:hover {
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+@media (max-width: 1024px) {
+    .barra-colares img {
+        height: 40rem;
+        width: 33.33%;
+     }
+
+     .colar-pena {
+         display: none;
+     }
+}
+
+@media (max-width: 700px) {
+    .barra-colares img {
+        height: 40rem;
+        width: 50%;
+     }
+
+     
+}
+
+@media (max-width: 450px) {
+    .barra-colares img {
+        height: 40rem;
+        width: 100%;
+     }
+
+     .colar-cruz {
+         display: none;
+     }
+}
