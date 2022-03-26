@@ -61,10 +61,30 @@ p {
         flex-direction: column;
         width: 60%;
     }
+    .history-1 a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 1.2rem;
+        color: var(--secundary-color);
+    
+        background: linear-gradient(to left,#62b102,#5DAA00,#62b102);;
+    
+        height: 5rem;
+        width: 22rem;
+    }
 
     .depoimentos-history h2 {
         font-size: 2.2rem;
         margin-bottom: 4.8rem;
     }
     
+}
+
+@media (max-width: 450px) {
+    .history-1 a {
+        font-size: 1rem;
+        width: 18rem;
+    }
 }
