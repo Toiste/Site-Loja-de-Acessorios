@@ -47,7 +47,7 @@
 
     width: 100%;
 
-    height: 7rem;
+    height: 100vh;
 }
 
 .logo-menu {
@@ -263,7 +263,7 @@
 
         position: absolute;
 
-        height: 65rem;
+        height: 100vh;
         width: 0%;
 
         overflow: hidden;
